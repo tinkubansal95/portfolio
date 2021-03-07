@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tinku's Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
- 
-</head>
-
-<body >
-  <header>
-    <h2> 
-      Tinku Rani
-    </h2> 
-    <nav>
-      <ul>
-        <li><a href="#AboutMe"><h1>About Me</h1></a></li>
-        <li><a href="#Projects"><h1>Projects</h1></a></li>
-        <li><a href="#Contact"><h1>Contact me</h1></a></li>
-      </ul>
-    </nav>  
-  </header>
-  <main >
-    <section id="AboutMe">
-      <h3>About Me</h3>
-      <p>
-          I have done B.Tech. in Computer & Science Engineering. I am pursuing a Web Devlepoment Bootcamp course at Monash University.
-          I have worked at Infosys as Software Engineer for six months. I have also worked at MAQ Software as BI Developer for about six months.
-      </p>
-    </section>
-    <section id="Projects">
-      <h3>Projects</h3>
-      <section class="benefit-lead">
-        <h1><a href="https://tinkubansal95.github.io/prework-about-me/" target="_blank">About Me Webpage</a></h1>
-        <p>
-          This website gives information about me, my hobbies and my background.
-        </p>
-    </section><section class="benefit-lead">
-      <h1>
-        <a href="https://tinkubansal95.github.io/horiseon-social-media-marketing/" target="_blank">
-          Horiseon Social Media Marketing Website
-        </a>
-      </h1>
-      <p>
-        It is a Social Media Marketing Website. Using this website, you can do Search Engine Optimization, 
-        Online Reputation Management, Social Media Marketing and much more in efficient and easy way.
-      </p>
-  </section>
-    </section>
-    <section id="Contact" >
-
-      <h3 class="text-center">Get in Touch!</h3>
-      <form class="contact">
-      <p>
-        <label for="name">Name:</label>
-        <!-- This element has a CSS declaration of `cursor: text` -->
-        <input id="name" type="text" placeholder="Your Name Please!" />
-      </p>
-      <p>
-        <label  for="email">E-mail:</label>
-        <input id="email" type="text" placeholder="me@example.com" />
-      </p>
-      <p>
-        <label for="Message">Message:</label>
-        <textarea id="message" placeholder="Please type your message here!"></textarea>
-      </p>
-      <p>
-        <!-- When this element is in a :focus state, the CSS `outline` property is applied -->
-        <button type="submit" onclick="submitForm()">Send</button>
-      </p>
-    </form>
-    </section>
-    <footer>
-      <h1>© Tinku Rani</h1>
-    </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinku's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="script.js"></script>
-  </main>
-</body>
+  </head>
+
+  <body >
+    <header>
+      <h2> 
+        Tinku Rani
+      </h2> 
+      <nav>
+        <ul>
+          <li><a href="#AboutMe"><h1>About Me</h1></a></li>
+          <li><a href="#Projects"><h1>Projects</h1></a></li>
+          <li><a href="#Contact"><h1>Contact me</h1></a></li>
+        </ul>
+      </nav>  
+    </header>
+
+    <main >
+      <section id="AboutMe">
+        <h3>
+          About Me
+        </h3>
+        <p>
+            I have done B.Tech. in Computer & Science Engineering. I am pursuing a Web Devlepoment Bootcamp course at Monash University.
+            I have worked at Infosys as Software Engineer for six months. I have also worked at MAQ Software as BI Developer for about six months.
+        </p>
+      </section>
+      <section id="Projects">
+        <h3>
+          Projects
+        </h3>
+        <section class="projects">
+          <section class="card">
+            <header>
+              About Me Webpage
+            </header>
+            <a href="https://tinkubansal95.github.io/prework-about-me/" target="_blank">
+              <img src="./assets/images/search-engine-optimization.jpg" alt="About Me Webpage"/>
+            </a>
+          </section>
+          <section class="card">
+            <header>
+              Horiseon Social Media Marketing Website
+            </header>
+            <a href="https://tinkubansal95.github.io/horiseon-social-media-marketing/" target="_blank">
+              <img src="./assets/images/social-media-marketing.jpg" alt="Horiseon Social Media Website" />
+            </a>
+          </section>
+        </section>
+      </section>
+      <section id="Contact" >
+        <h3 class="text-center">
+          Get in Touch!
+        </h3>
+        <form class="contact">
+          <p>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Your Name Please!" />
+          </p>
+          <p>
+            <label  for="email">E-mail:</label>
+            <input id="email" type="text" placeholder="me@example.com" />
+          </p>
+          <p>
+            <label for="Message">Message:</label>
+            <textarea id="message" placeholder="Please type your message here!"></textarea>
+          </p>
+          <p>
+            <button type="submit" onclick="submitForm()">Send</button>
+          </p>
+        </form>
+      </section>
+      <footer>
+        <h1>© Tinku Rani</h1>
+      </footer>
+    </main>
+  </body>
 </html>  
