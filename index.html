@@ -1,103 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tinku's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="script.js"></script>
   </head>
 
-  <body >
+  <body>
     <header>
-      <h2> 
-        Tinku Rani
-      </h2> 
+      <h2>Tinku Rani</h2>
       <nav>
         <ul>
-          <li><a href="#AboutMe"><h1>About Me</h1></a></li>
-          <li><a href="#Projects"><h1>Projects</h1></a></li>
-          <li><a href="#Contact"><h1>Contact me</h1></a></li>
-          <li><a href="assets/TinkuRani.pdf" download="Resume_Tinku"><h1>Resume</h1></a></li>
+          <li>
+            <a href="#AboutMe"><h1>About Me</h1></a>
+          </li>
+          <li>
+            <a href="#Projects"><h1>Projects</h1></a>
+          </li>
+          <li>
+            <a href="#Contact"><h1>Contact me</h1></a>
+          </li>
+          <li>
+            <a href="assets/ResumeTinku.pdf" download="Resume_Tinku"
+              ><h1>Resume</h1></a
+            >
+          </li>
         </ul>
-      </nav>  
+      </nav>
     </header>
 
-    <main >
+    <main>
       <section id="AboutMe">
-        <h3>
-          About Me
-        </h3>
+        <h3>About Me</h3>
         <p>
-            I have done B.Tech. in Computer & Science Engineering. I am pursuing a Web Devlepoment Bootcamp course at Monash University.
-            I have worked at Infosys as Software Engineer for six months. I have also worked at MAQ Software as BI Developer for about six months.
+          I have done B.Tech. in Computer & Science Engineering. I am pursuing a
+          Web Devlepoment Bootcamp course at Monash University. I have worked at
+          Infosys as Software Engineer for six months. I have also worked at MAQ
+          Software as BI Developer for about six months.
         </p>
       </section>
       <section id="Projects">
-        <h3>
-          Projects
-        </h3>
+        <h3>Projects</h3>
         <section class="projects">
           <section class="card">
-            <header>
-              Weather Dashboard
-            </header>
-            <a href="https://tinkubansal95.github.io/weather-dashboard/" target="_blank">
-              <img src="./assets/images/weather-dashboard.png" alt="Weather Dashboard"/>
-            </a>
-          </section>
-          <section class="card">
-            <header>
-              Work Day Scheduler
-            </header>
-            <a href="https://tinkubansal95.github.io/work-day-scheduler/" target="_blank">
-              <img src="./assets/images/work-day-scheduler.png" alt="Work Day Scheduler"/>
-            </a>
-          </section>
-          <section class="card">
-            <header>
-              AFL Website
-            </header>
-            <a href="https://hayden-code.github.io/AFLWebsite/index.html" target="_blank">
-              <img src="./assets/images/AFLWebsite.png" alt="AFL Website"/>
-            </a>
-          </section>
-          <section class="card">
-            <header>
-              About Me Webpage
-            </header>
-            <a href="https://tinkubansal95.github.io/prework-about-me/" target="_blank">
-              <img src="./assets/images/search-engine-optimization.jpg" alt="About Me Webpage"/>
-            </a>
-          </section>
-          <section class="card">
-            <header>
-              Horiseon Social Media Marketing Website
-            </header>
-            <a href="https://tinkubansal95.github.io/horiseon-social-media-marketing/" target="_blank">
-              <img src="./assets/images/social-media-marketing.jpg" alt="Horiseon Social Media Website" />
-            </a>
+            <header>Tech Blog</header>
+            <img
+              src="./assets/images/weather-dashboard.png"
+              alt="AFL Website"
+            />
+            <div class="text-center">
+              <button id="gitLink">
+                <a
+                  href="https://github.com/tinkubansal95/tech-blog"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Github</a
+                >
+              </button>
+              <button id="gitLink">
+                <i class="fas fa-laptop-code"></i> Live
+              </button>
+            </div>
           </section>
         </section>
       </section>
-      <section id="Contact" >
-        <h3 class="text-center">
-          Get in Touch!
-        </h3>
+      <section id="Contact">
+        <h3 class="text-center">Get in Touch!</h3>
         <form class="contact">
           <p>
             <label for="name">Name:</label>
             <input id="name" type="text" placeholder="Your Name Please!" />
           </p>
           <p>
-            <label  for="email">E-mail:</label>
+            <label for="email">E-mail:</label>
             <input id="email" type="text" placeholder="me@example.com" />
           </p>
           <p>
             <label for="Message">Message:</label>
-            <textarea id="message" placeholder="Please type your message here!"></textarea>
+            <textarea
+              id="message"
+              placeholder="Please type your message here!"
+            ></textarea>
           </p>
           <p>
             <button type="submit" onclick="submitForm()">Send</button>
@@ -107,9 +95,17 @@
       <footer>
         tinkubansal21@gmail.com
         <h1>© Tinku Rani</h1>
-        <h1><a href="https://www.linkedin.com/in/tinkubansal21/" target="_blank"><i class="fab fa-linkedin-in"></i></a> &nbsp
-        <a href ="https://github.com/tinkubansal95"><i class="fab fa-github"></i></a> </h1>
+        <h1>
+          <a href="https://www.linkedin.com/in/tinkubansal21/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          &nbsp
+          <a href="https://github.com/tinkubansal95" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </h1>
       </footer>
     </main>
+    <script src="./assets/js/script.js"></script>
   </body>
-</html>  
+</html>
